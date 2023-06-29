@@ -7,7 +7,7 @@ locals {
 module "opensearch_security_group" {
   source                              = "OT-CLOUD-KIT/security-groups/aws"
   version                             = "1.0.0"
-  name_sg                             = "opensearch-sg"
+  name_sg                             = var.sg_name
   tags                                = var.tags
   enable_whitelist_ip                 = var.enable_whitelist_ip
   enable_source_security_group_entry  = var.enable_source_security_group_entry

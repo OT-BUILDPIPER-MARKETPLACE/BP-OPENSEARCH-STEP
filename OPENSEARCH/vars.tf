@@ -18,6 +18,11 @@ variable "vpc_cidr_range" {
   type        = string
 }
 
+variable "sg_name" {
+  description = "Name of the security group"
+  type        = string
+}
+
 variable "tags" {
   description = "Tags for resources"
   type        = map(string)
