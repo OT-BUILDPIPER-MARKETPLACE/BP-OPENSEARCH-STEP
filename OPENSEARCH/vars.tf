@@ -43,7 +43,7 @@ variable "create_outbound_rule_with_src_sg_id" {
   type        = bool
 }
 
-variable "name" {
+variable "opensearch_name" {
   description = "Name of the OpenSearch domain"
   type        = string
 }

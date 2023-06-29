@@ -45,7 +45,7 @@ module "opensearch" {
     subnet_ids         = local.subnet_ids
     security_group_ids = [module.opensearch_security_group.sg_id]
   }]
-  name                             = var.name
+  name                             = var.opensearch_name
   tags                             = var.tags
   acm_certificate_domain           = var.acm_certificate_domain
   statuses                         = var.statuses
