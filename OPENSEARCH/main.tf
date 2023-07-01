@@ -42,7 +42,7 @@ module "opensearch" {
   source  = "OT-CLOUD-KIT/opensearch/aws"
   version = "0.0.1"
   vpc_options = [{
-    subnet_ids         = local.subnet_ids
+    subnet_ids         = [local.subnet_ids]
     security_group_ids = [module.opensearch_security_group.sg_id]
   }]
   name                             = var.opensearch_name
