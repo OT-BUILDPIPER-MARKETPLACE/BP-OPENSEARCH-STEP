@@ -70,7 +70,7 @@ variable "elasticsearch_version" {
 
 variable "availability_zones" {
   description = "List of availability zones"
-  type        = list(string)
+  type        =  number
 }
 
 variable "instance_count" {
