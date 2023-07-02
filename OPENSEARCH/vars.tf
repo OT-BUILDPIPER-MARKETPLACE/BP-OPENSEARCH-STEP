@@ -48,15 +48,8 @@ variable "opensearch_name" {
   type        = string
 }
 
-variable "acm_certificate_domain" {
-  description = "Domain name for ACM certificate"
-  type        = string
-}
 
-variable "statuses" {
-  description = "List of OpenSearch instance statuses"
-  type        = list(string)
-}
+
 
 variable "domain" {
   description = "OpenSearch domain name"
