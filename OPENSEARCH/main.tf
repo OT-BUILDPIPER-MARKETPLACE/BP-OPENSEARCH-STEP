@@ -42,13 +42,11 @@ module "opensearch" {
   source  = "OT-CLOUD-KIT/opensearch/aws"
   version = "0.0.1"
   vpc_options = [{
-    subnet_ids         = [local.subnet_ids]
+    subnet_ids         = local.subnet_ids
     security_group_ids = [module.opensearch_security_group.sg_id]
   }]
   name                             = var.opensearch_name
   tags                             = var.tags
-  acm_certificate_domain           = var.acm_certificate_domain
-  statuses                         = var.statuses
   domain                           = var.domain
   elasticsearch_version            = var.elasticsearch_version
   availability_zones               = var.availability_zones
